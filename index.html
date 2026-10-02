@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepace — VSTEP B2 & CEFR B2 Master Learning Platform</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Whitepace SaaS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       WHITEPACE NAVBAR
+       ========================================================================== -->
+  <header class="wp-header">
+    <div class="container">
+      <div class="wp-nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="#" class="wp-brand">
+          <div class="wp-logo-icon">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <div class="wp-brand-text">whitepace <span>B2</span></div>
+        </a>
+
+        <!-- Nav Links -->
+        <ul class="wp-nav-links">
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="reader">18 Phân Hệ</a></li>
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="grammar">30 Ngữ Pháp</a></li>
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="vocab">30 Từ Vựng</a></li>
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="flashcards">Flashcards SRS</a></li>
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="quiz">Trắc Nghiệm B2</a></li>
+          <li><a href="#learning-studio" class="wp-nav-link" data-target-studio="checklist">Bảng Kiểm</a></li>
+          <li><a href="#roadmaps" class="wp-nav-link">Lộ Trình Học</a></li>
+        </ul>
+
+        <!-- Header Actions -->
+        <div class="wp-header-actions">
+          <button class="wp-search-btn" id="searchTriggerBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Tra cứu...</span>
+            <span class="kbd-badge">Ctrl K</span>
+          </button>
+          <a href="#learning-studio" class="btn btn-yellow btn-sm" data-target-studio="reader">
+            Vào Học Ngay <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO (Iconic Whitepace Navy Hero)
+       ========================================================================== -->
+  <section class="wp-hero-section">
+    <div class="container">
+      <div class="wp-hero-grid">
+        <!-- Left Column: Copy & Actions -->
+        <div class="wp-hero-content">
+          <h1>Chinh Phục Chuẩn Tiếng Anh <span>VSTEP B2 & CEFR B2</span></h1>
+          <p class="wp-hero-subtitle">
+            Hệ sinh thái tri thức và nền tảng đào tạo tiếng Anh học thuật Bậc 4 chuẩn hóa toàn diện. Tích hợp 18 phân hệ, 30 chủ điểm ngữ pháp, 1.050+ từ vựng, hệ thống Flashcards 3D và phòng thi mô phỏng.
+          </p>
+
+          <div class="wp-hero-actions">
+            <a href="#learning-studio" class="btn btn-yellow" data-target-studio="flashcards">
+              Bắt Đầu Học Miễn Phí <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#learning-studio" class="btn btn-outline-white" data-target-studio="reader">
+              Khám Phá 18 Phân Hệ
+            </a>
+          </div>
+
+          <div class="wp-hero-badges">
+            <div class="wp-hero-badge-item">
+              <i class="fa-solid fa-circle-check"></i> Chuẩn Bậc 4 & CEFR B2
+            </div>
+            <div class="wp-hero-badge-item">
+              <i class="fa-solid fa-circle-check"></i> 520+ Thẻ Flashcard SRS
+            </div>
+            <div class="wp-hero-badge-item">
+              <i class="fa-solid fa-circle-check"></i> 100% Hoàn Chỉnh Ngoại Tuyến
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Whitepace SaaS Product Window Mockup -->
+        <div class="wp-product-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <div class="window-dot red"></div>
+              <div class="window-dot yellow"></div>
+              <div class="window-dot green"></div>
+            </div>
+            <div class="window-title">Whitepace B2 Master Studio</div>
+            <div style="font-size: 0.75rem; color: var(--wp-blue); font-weight: 700;">● LIVE</div>
+          </div>
+
+          <div class="window-body">
+            <!-- Stats Ring Box -->
+            <div class="stats-ring-box">
+              <div>
+                <div class="ring-title">Mức Độ Sẵn Sàng (Readiness)</div>
+                <div class="ring-score" id="heroReadiness">86%</div>
+                <div style="font-size: 0.75rem; color: var(--wp-text-soft); margin-top: 4px;">
+                  Target Điểm Số: <strong>6.5 – 8.0 VSTEP</strong>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 2.2rem;">🔥</div>
+                <div style="font-size: 0.8rem; font-weight: 700; color: var(--wp-yellow);">Chuỗi 12 Ngày</div>
+              </div>
+            </div>
+
+            <!-- Interactive Mini-Card Preview -->
+            <div class="quick-preview-card">
+              <div class="preview-badge">TỪ VỰNG HÔM NAY</div>
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <h4 style="font-size: 1.4rem; color: var(--wp-navy);" id="heroFcWord">interdisciplinary</h4>
+                  <p style="font-size: 0.82rem; color: var(--wp-text-secondary); margin-top: 4px;">
+                    /ˌɪn.tə.dɪs.əˈplɪn.ər.i/ • Liên ngành học thuật
+                  </p>
+                </div>
+                <button class="card-audio-btn" id="heroFcAudio" title="Nghe phát âm chuẩn">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+              </div>
+              <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--wp-border); font-size: 0.8rem; color: var(--wp-text-muted); display:flex; justify-content: space-between;">
+                <span>Chủ đề: Education & Research</span>
+                <a href="#learning-studio" data-target-studio="flashcards" style="color: var(--wp-blue); text-decoration: none; font-weight: 600;">Xem thêm 520+ thẻ ➔</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: FEATURE STRIP 1 — KNOWLEDGE MANAGEMENT (White)
+       ========================================================================== -->
+  <section class="wp-section-white">
+    <div class="container">
+      <div class="split-feature-grid">
+        <div>
+          <div class="feature-tagline">QUẢN TRỊ TRI THỨC TOÀN DIỆN</div>
+          <h2 class="feature-heading">Toàn bộ 18 phân hệ tri thức trong một nền tảng duy nhất</h2>
+          <p class="feature-desc">
+            Không còn tình trạng tài liệu lưu trữ phân tán, chắp vá. Mọi khối kiến thức từ tổng quan quy chế thi, phát âm IPA, ngữ pháp học thuật, họ từ vựng cho đến chiến lược làm bài 4 kỹ năng Nghe - Đọc - Nói - Viết đều được tổ chức chuẩn mực theo cấu trúc module khoa học.
+          </p>
+          <ul class="feature-checklist">
+            <li><i class="fa-solid fa-circle-check"></i> <strong>30 Chủ điểm ngữ pháp</strong> bóc tách đầy đủ 10 tiêu chí sư phạm</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>1.050+ Từ vựng học thuật</strong> bao quát 100% chủ đề thường gặp</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>105 Cặp câu Paraphrasing B1 ➔ B2</strong> nâng tầm bài luận</li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>50+ Phác đồ điều trị lỗi sai L1</strong> của người học Việt Nam</li>
+          </ul>
+          <a href="#learning-studio" class="btn btn-blue" data-target-studio="reader">
+            Mở Trình Đọc 18 Phân Hệ <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div>
+          <!-- Visual hierarchy representation card -->
+          <div style="background-color: var(--wp-light-blue); border: 2px solid var(--wp-border); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-md);">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--wp-blue); text-transform: uppercase; margin-bottom: 8px;">CẤU TRÚC 18 PHÂN HỆ ĐỘC QUYỀN</div>
+            <h3 style="margin-bottom: 20px;">Bản Đồ Năng Lực Học Thuật B2</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <div style="background: white; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--wp-border); display: flex; align-items: center; justify-content: space-between;">
+                <span><i class="fa-solid fa-map" style="color: var(--wp-blue); margin-right: 10px;"></i> 00 - 01: Bản Đồ Năng Lực & Quy Chế VSTEP</span>
+                <span class="preview-badge">6 TỆP</span>
+              </div>
+              <div style="background: white; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--wp-border); display: flex; align-items: center; justify-content: space-between;">
+                <span><i class="fa-solid fa-book-open" style="color: var(--wp-blue); margin-right: 10px;"></i> 02 - 04: Ngữ Pháp, Từ Vựng & Collocations B2</span>
+                <span class="preview-badge">10 TỆP</span>
+              </div>
+              <div style="background: white; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--wp-border); display: flex; align-items: center; justify-content: space-between;">
+                <span><i class="fa-solid fa-headphones" style="color: var(--wp-blue); margin-right: 10px;"></i> 05 - 08: Chinh Phục 4 Kỹ Năng Nghe - Đọc - Nói - Viết</span>
+                <span class="preview-badge">4 TỆP</span>
+              </div>
+              <div style="background: white; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--wp-border); display: flex; align-items: center; justify-content: space-between;">
+                <span><i class="fa-solid fa-arrows-rotate" style="color: var(--wp-blue); margin-right: 10px;"></i> 09 - 12: Phát Âm, Cấu Tạo Từ, Paraphrase & Lỗi Sai</span>
+                <span class="preview-badge">4 TỆP</span>
+              </div>
+              <div style="background: white; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--wp-border); display: flex; align-items: center; justify-content: space-between;">
+                <span><i class="fa-solid fa-route" style="color: var(--wp-blue); margin-right: 10px;"></i> 13 - 17: Checklists, Lộ Trình, SRS & Giáo Trình</span>
+                <span class="preview-badge">5 TỆP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: FEATURE STRIP 2 — SPACED REPETITION (Navy)
+       ========================================================================== -->
+  <section class="wp-section-navy">
+    <div class="container">
+      <div class="split-feature-grid">
+        <!-- Left: Interactive Flashcard Showcase -->
+        <div>
+          <div style="background-color: white; border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-lg); color: var(--wp-text-dark); text-align: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+              <span class="preview-badge">FLASHCARD DEMO</span>
+              <span style="font-size: 0.8rem; color: var(--wp-text-muted);">Nhấp để lật 3D</span>
+            </div>
+            
+            <div style="padding: 30px 20px; background-color: var(--wp-light-blue); border-radius: var(--radius-md); border: 1px solid var(--wp-border);">
+              <h3 style="font-size: 1.8rem; color: var(--wp-navy); margin-bottom: 8px;">preponderance</h3>
+              <p style="font-size: 0.9rem; color: var(--wp-text-secondary);">/prɪˈpɒn.dər.əns/ • Sự chiếm ưu thế tuyệt đối</p>
+              <button class="card-audio-btn" style="margin: 16px auto 0 auto;" onclick="window.speakText('preponderance')">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; gap: 12px; justify-content: center;">
+              <button class="btn-again btn-sm" onclick="window.switchStudioTab('flashcards')">Chưa Nhớ</button>
+              <button class="btn-good btn-sm" onclick="window.switchStudioTab('flashcards')">Đã Nhớ Vững</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text Description -->
+        <div>
+          <div class="feature-tagline" style="color: var(--wp-yellow);">KHOA HỌC GHI NHỚ DÀI HẠN</div>
+          <h2 class="feature-heading" style="color: white;">Chống lại đường cong lãng quên với Flashcards SRS 3D</h2>
+          <p class="feature-desc" style="color: var(--wp-text-soft);">
+            Áp dụng thuật toán Lặp lại ngắt quãng (Spaced Repetition) và Chủ động gợi nhớ (Active Recall) từ nghiên cứu của Hermann Ebbinghaus. Hệ thống giúp bạn đưa 1.050+ từ vựng học thuật, cấu trúc Paraphrase và ma trận họ từ vào trí nhớ dài hạn vĩnh viễn.
+          </p>
+          <ul class="feature-checklist">
+            <li><i class="fa-solid fa-bolt" style="color: var(--wp-yellow);"></i> <strong>520+ Thẻ Flashcards 3D</strong> chia 4 bộ chuyên đề độc lập</li>
+            <li><i class="fa-solid fa-bolt" style="color: var(--wp-yellow);"></i> <strong>Tích hợp Text-To-Speech</strong> nghe phát âm bản xứ tự nhiên</li>
+            <li><i class="fa-solid fa-bolt" style="color: var(--wp-yellow);"></i> <strong>Theo dõi chuỗi học tập (Streak)</strong> tạo thói quen kỷ luật mỗi ngày</li>
+          </ul>
+          <a href="#learning-studio" class="btn btn-yellow" data-target-studio="flashcards">
+            Luyện Flashcards Toàn Diện <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: 6 CORE VALUE PROPOSITION CARDS (Soft Blue)
+       ========================================================================== -->
+  <section class="wp-section-light">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <div class="feature-tagline">HỆ SINH THÁI TRI THỨC TOÀN NĂNG</div>
+        <h2 style="font-size: 2.6rem; font-weight: 800; margin-bottom: 16px;">6 Trụ Cột Đột Phá Điểm Số VSTEP</h2>
+        <p style="font-size: 1.05rem;">
+          Được thiết kế độc quyền nhằm tối ưu hóa từng tiêu chí chấm điểm khắt khe của khung CEFR B2 và bài thi VSTEP Bậc 4.
+        </p>
+      </div>
+
+      <div class="wp-cards-grid">
+        <!-- Card 1 -->
+        <div class="wp-card" onclick="window.switchStudioTab('grammar')">
+          <div class="wp-card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+          <h3 class="wp-card-title">30 Ngữ Pháp Học Thuật</h3>
+          <p class="wp-card-desc">Bóc tách toàn diện 12 thì, thể bị động, đảo ngữ, câu chẻ, mệnh đề phân từ kèm bài tập và bẫy đề thi VSTEP.</p>
+          <div class="wp-card-link">Học ngữ pháp ngay <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="wp-card" onclick="window.switchStudioTab('vocab')">
+          <div class="wp-card-icon"><i class="fa-solid fa-spell-check"></i></div>
+          <h3 class="wp-card-title">Từ Vựng 30 Chủ Đề</h3>
+          <p class="wp-card-desc">1.050+ Từ vựng học thuật bao quát AI, Môi trường, Giáo dục, Kinh tế kèm tính năng nghe phát âm âm thanh.</p>
+          <div class="wp-card-link">Khám phá từ vựng <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="wp-card" onclick="window.switchStudioTab('flashcards')">
+          <div class="wp-card-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="wp-card-title">Flashcards SRS 3D</h3>
+          <p class="wp-card-desc">Hệ thống lật thẻ thông minh với 520+ thẻ phân tầng theo thuật toán chống lãng quên Ebbinghaus.</p>
+          <div class="wp-card-link">Lật thẻ ôn tập <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="wp-card" onclick="window.switchStudioTab('reader')">
+          <div class="wp-card-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3 class="wp-card-title">105 Cặp Paraphrasing</h3>
+          <p class="wp-card-desc">Nâng cấp tức thì câu văn ngây ngô B1 thành câu học thuật sắc bén B2 thông qua danh từ hóa và bị động khách quan.</p>
+          <div class="wp-card-link">Xem 105 cặp câu <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="wp-card" onclick="window.switchStudioTab('quiz')">
+          <div class="wp-card-icon"><i class="fa-solid fa-circle-question"></i></div>
+          <h3 class="wp-card-title">Trắc Nghiệm B2 Tương Tác</h3>
+          <p class="wp-card-desc">Phòng thi thực chiến kiểm tra nhanh ngữ pháp, bẫy thi Reading/Listening có chấm điểm và giải thích tức thì.</p>
+          <div class="wp-card-link">Làm bài thi thử <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="wp-card" onclick="window.switchStudioTab('checklist')">
+          <div class="wp-card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+          <h3 class="wp-card-title">Bảng Kiểm B2 Readiness</h3>
+          <p class="wp-card-desc">Tự rà soát 🔴 🟡 🟢 trước ngày thi, thanh đo phần trăm tự động lưu trữ trên trình duyệt của bạn.</p>
+          <div class="wp-card-link">Đánh giá năng lực <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: THE LEARNING STUDIO (Interactive Tabbed Workspace)
+       ========================================================================== -->
+  <section class="wp-studio-section" id="learning-studio">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <div class="feature-tagline">KHÔNG GIAN HỌC TẬP THỰC TẾ</div>
+        <h2 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 8px;">Whitepace Learning Studio</h2>
+        <p style="color: var(--wp-text-secondary);">Chuyển đổi giữa các phân hệ học tập mà không cần tải lại trang</p>
+      </div>
+
+      <!-- Studio Tabs Bar -->
+      <div class="wp-studio-tabs-bar">
+        <button class="studio-tab-btn active" data-tab="reader">
+          <i class="fa-solid fa-book-open-reader"></i> 18 Phân Hệ
+        </button>
+        <button class="studio-tab-btn" data-tab="grammar">
+          <i class="fa-solid fa-book-bookmark"></i> 30 Ngữ Pháp
+        </button>
+        <button class="studio-tab-btn" data-tab="vocab">
+          <i class="fa-solid fa-spell-check"></i> 30 Từ Vựng
+        </button>
+        <button class="studio-tab-btn" data-tab="flashcards">
+          <i class="fa-solid fa-bolt"></i> Flashcards SRS
+        </button>
+        <button class="studio-tab-btn" data-tab="quiz">
+          <i class="fa-solid fa-circle-question"></i> Trắc Nghiệm B2
+        </button>
+        <button class="studio-tab-btn" data-tab="checklist">
+          <i class="fa-solid fa-clipboard-check"></i> Bảng Kiểm B2
+        </button>
+      </div>
+
+      <!-- PANEL 1: READER -->
+      <div class="studio-panel active" id="studio-panel-reader">
+        <div class="reader-layout">
+          <!-- Sidebar -->
+          <aside class="reader-sidebar">
+            <input type="text" class="sidebar-search" id="sidebarSearch" placeholder="Lọc tệp tài liệu trong 18 phân hệ...">
+            <div id="readerSidebar">
+              <!-- Rendered via app.js -->
+            </div>
+          </aside>
+
+          <!-- Main Article -->
+          <article class="reader-content-box">
+            <div class="reader-controls">
+              <span class="reader-title-badge" id="readerTitle">Đang tải tài liệu...</span>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-outline-blue btn-sm" id="zoomOutBtn" title="Giảm cỡ chữ"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn btn-outline-blue btn-sm" id="zoomInBtn" title="Tăng cỡ chữ"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn btn-outline-blue btn-sm" onclick="window.print()" title="In / Xuất PDF"><i class="fa-solid fa-print"></i> In PDF</button>
+              </div>
+            </div>
+            <div class="markdown-body" id="readerContent">
+              <!-- Markdown rendered via app.js -->
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- PANEL 2: GRAMMAR HUB -->
+      <div class="studio-panel" id="studio-panel-grammar">
+        <div style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.6rem; color: var(--wp-navy);">30 Chủ Điểm Ngữ Pháp Học Thuật B2</h3>
+          <p style="color: var(--wp-text-secondary); margin-top: 4px;">Nhấp vào bất kỳ chủ điểm nào để mở nội dung chi tiết trong trình đọc học thuật.</p>
+        </div>
+        <div class="wp-cards-grid" id="grammarGrid">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+
+      <!-- PANEL 3: VOCABULARY HUB -->
+      <div class="studio-panel" id="studio-panel-vocab">
+        <div style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.6rem; color: var(--wp-navy);">Từ Vựng 30 Chủ Đề Chuẩn VSTEP</h3>
+          <p style="color: var(--wp-text-secondary); margin-top: 4px;">Nhấp vào từ vựng để nghe giọng phát âm bản xứ (Native Text-to-Speech).</p>
+        </div>
+        <div id="vocabTopicsList">
+          <!-- Rendered via app.js -->
+        </div>
+      </div>
+
+      <!-- PANEL 4: FLASHCARDS SRS -->
+      <div class="studio-panel" id="studio-panel-flashcards">
+        <div class="flashcards-container">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <h3 style="font-size: 1.8rem; color: var(--wp-navy);">Hệ Thống Flashcards 3D (Spaced Repetition)</h3>
+            <p style="font-size: 0.92rem; color: var(--wp-text-secondary); margin-top: 4px;">
+              Nhấp vào thẻ hoặc nhấn <span class="kbd-badge">Phím Space</span> để lật thẻ. Bấm 🔊 để nghe phát âm.
+            </p>
+          </div>
+
+          <!-- Deck Selector -->
+          <div class="deck-selector">
+            <button class="deck-btn active" data-deck="all">Tất Cả (520+ Thẻ)</button>
+            <button class="deck-btn" data-deck="vocab">Từ Vựng B2 (300 Thẻ)</button>
+            <button class="deck-btn" data-deck="para">Paraphrase B1 ➔ B2 (105 Thẻ)</button>
+            <button class="deck-btn" data-deck="mistakes">Trị Lỗi Sai L1 (30 Thẻ)</button>
+            <button class="deck-btn" data-deck="wordfamily">Ma Trận Họ Từ (85 Thẻ)</button>
+          </div>
+
+          <!-- 3D Card -->
+          <div class="flashcard-wrapper" id="fcCard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <span class="card-category-badge" id="fcCategory">Vocabulary B2</span>
+                <div class="card-main-text" id="fcFront">curriculum</div>
+                <button class="card-audio-btn" id="fcAudioBtn" title="Nghe phát âm chuẩn">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <div class="card-flip-hint"><i class="fa-solid fa-rotate"></i> Nhấp để xem mặt sau</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-sub-text" id="fcBack">Đang tải nội dung...</div>
+                <div class="card-flip-hint"><i class="fa-solid fa-rotate"></i> Nhấp để lật lại mặt trước</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="flashcard-controls">
+            <button class="btn-again" id="fcBtnAgain">
+              <i class="fa-solid fa-rotate-left"></i> Chưa nhớ (Ôn lại)
+            </button>
+            <button class="btn-good" id="fcBtnGood">
+              <i class="fa-solid fa-check"></i> Đã nhớ vững
+            </button>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-top: 24px; font-size: 0.9rem; color: var(--wp-text-secondary);">
+            <div>Thẻ số: <strong id="fcCounter">1 / 520</strong></div>
+            <div>Chuỗi đúng liên tiếp: 🔥 <strong id="fcStreak">0</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 5: INTERACTIVE QUIZ -->
+      <div class="studio-panel" id="studio-panel-quiz">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <span class="quiz-category" id="quizCategory">Grammar Tenses</span>
+            <span id="quizProgress" style="font-size: 0.85rem; color: var(--wp-text-muted);">Câu 1 / 10</span>
+          </div>
+
+          <div class="quiz-question-text" id="quizQuestion">
+            By the time the committee submits the report tomorrow, they ______ all customer complaints.
+          </div>
+
+          <div class="quiz-options" id="quizOptions">
+            <!-- Rendered via app.js -->
+          </div>
+
+          <div class="quiz-explanation" id="quizExplanation">
+            <!-- Rendered via app.js -->
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
+            <button class="btn btn-outline-blue btn-sm" onclick="window.restartQuiz()" title="Làm lại từ đầu">
+              <i class="fa-solid fa-rotate-right"></i> Làm lại
+            </button>
+            <button class="btn btn-blue" id="quizNextBtn">
+              Câu tiếp theo <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 6: CHECKLIST CAN-DO -->
+      <div class="studio-panel" id="studio-panel-checklist">
+        <div class="checklist-container">
+          <!-- Readiness Meter -->
+          <div class="readiness-meter">
+            <div class="meter-info" style="flex: 1; margin-right: 28px;">
+              <h3>Chỉ Số Sẵn Sàng VSTEP B2 (B2 Readiness Score)</h3>
+              <p style="font-size: 0.88rem; color: var(--wp-text-soft);">
+                Đánh giá từng tiêu chuẩn theo 3 mức độ: 🔴 Chưa đạt | 🟡 Đang rèn | 🟢 Thành thạo
+              </p>
+              <div class="meter-bar-outer">
+                <div class="meter-bar-inner" id="readinessProgressBar"></div>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 2.6rem; font-weight: 800; color: var(--wp-yellow);" id="readinessPercent">0%</div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--wp-text-soft); font-weight: 600;">Mức độ chuẩn bị</div>
+            </div>
+          </div>
+
+          <!-- Table -->
+          <table class="checklist-table">
+            <thead>
+              <tr style="text-align: left; font-size: 0.8rem; color: var(--wp-text-muted); text-transform: uppercase;">
+                <th style="padding: 10px 20px; width: 60px;">TT</th>
+                <th style="padding: 10px 20px;">Tiêu chí & Năng lực kiểm chứng B2</th>
+                <th style="padding: 10px 20px; text-align: right; width: 300px;">Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody id="checklistBody">
+              <!-- Rendered via app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: WHITEPACE TIERED ROADMAPS (White)
+       ========================================================================== -->
+  <section class="wp-section-white" id="roadmaps">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <div class="feature-tagline">LỘ TRÌNH ĐÀO TẠO KHOA HỌC</div>
+        <h2 style="font-size: 2.6rem; font-weight: 800; margin-bottom: 16px;">Kế Hoạch Bứt Phá Mục Tiêu B2</h2>
+        <p style="font-size: 1.05rem;">
+          Được thiết kế dựa trên số giờ học có hướng dẫn (Guided Learning Hours) của Cambridge và mô hình thực hành có chủ đích (Deliberate Practice).
+        </p>
+      </div>
+
+      <div class="wp-pricing-grid">
+        <!-- Plan 1 -->
+        <div class="wp-pricing-card">
+          <div class="plan-name">Bứt Phá B1 ➔ B2</div>
+          <p>Dành cho người đã có nền tảng tiếng Anh B1 cơ bản muốn bứt phá lên B2.</p>
+          <div class="plan-price">16 Tuần</div>
+          <ul class="plan-feature-list">
+            <li><i class="fa-solid fa-check"></i> Củng cố 30 chủ điểm ngữ pháp B2</li>
+            <li><i class="fa-solid fa-check"></i> Nạp 1.050 từ vựng theo 30 chủ đề</li>
+            <li><i class="fa-solid fa-check"></i> Luyện Task 1 Thư & Task 2 PEEL</li>
+            <li><i class="fa-solid fa-check"></i> Chiếm lĩnh 10 dạng câu hỏi Reading</li>
+            <li><i class="fa-solid fa-check"></i> 90 phút học tập/ngày có chủ đích</li>
+          </ul>
+          <a href="#learning-studio" class="btn btn-outline-blue" data-target-studio="reader">Bắt Đầu Lộ Trình 16 Tuần</a>
+        </div>
+
+        <!-- Plan 2: Featured Navy Card -->
+        <div class="wp-pricing-card featured">
+          <div class="plan-badge">ĐƯỢC KHUYÊN DÙNG</div>
+          <div class="plan-name">Toàn Diện A2 ➔ B2</div>
+          <p>Dành cho người bị hổng kiến thức, mất gốc hoặc muốn xây dựng lại nền tảng từ đầu.</p>
+          <div class="plan-price" style="color: var(--wp-yellow);">24 Tuần</div>
+          <ul class="plan-feature-list">
+            <li><i class="fa-solid fa-check"></i> Chuẩn hóa 44 âm IPA & ngữ âm</li>
+            <li><i class="fa-solid fa-check"></i> Khung xoắn ốc 5 cấp độ 200 bài học</li>
+            <li><i class="fa-solid fa-check"></i> Trị dứt điểm 50+ lỗi sai can thiệp L1</li>
+            <li><i class="fa-solid fa-check"></i> Phản xạ Speaking Part 1, 2, 3 máy tính</li>
+            <li><i class="fa-solid fa-check"></i> Thi thử mô phỏng áp lực phòng thi</li>
+          </ul>
+          <a href="#learning-studio" class="btn btn-yellow" data-target-studio="reader">Bắt Đầu Lộ Trình 24 Tuần</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="wp-pricing-card">
+          <div class="plan-name">Vượt Cạn Cấp Tốc</div>
+          <p>Dành cho thí sinh sắp đến kỳ thi chính thức cần tối ưu hóa chiến thuật điểm số.</p>
+          <div class="plan-price">30 Ngày</div>
+          <ul class="plan-feature-list">
+            <li><i class="fa-solid fa-check"></i> Quy tắc quản lý thời gian 13 - 2</li>
+            <li><i class="fa-solid fa-check"></i> 5 Bẫy Reading & Distractors Listening</li>
+            <li><i class="fa-solid fa-check"></i> Học tủ 105 cặp câu Paraphrasing</li>
+            <li><i class="fa-solid fa-check"></i> Tự soát lỗi bài viết 5 phút cuối giờ</li>
+            <li><i class="fa-solid fa-check"></i> Bảng kiểm rà soát trước ngày thi</li>
+          </ul>
+          <a href="#learning-studio" class="btn btn-outline-blue" data-target-studio="reader">Bắt Đầu Luyện Cấp Tốc</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: TESTIMONIALS / SOCIAL PROOF (Soft Blue)
+       ========================================================================== -->
+  <section class="wp-section-light">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 48px auto;">
+        <div class="feature-tagline">KẾT QUẢ ĐÃ ĐƯỢC CHỨNG MINH</div>
+        <h2 style="font-size: 2.4rem; font-weight: 800;">Học Viên Đạt Chuẩn Nói Gì?</h2>
+      </div>
+
+      <div class="wp-cards-grid">
+        <div class="wp-card">
+          <div style="color: #F59E0B; margin-bottom: 12px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 0.95rem; font-style: italic; margin-bottom: 20px;">
+            "Phần Paraphrasing 105 cặp câu và công thức PEEL trong phân hệ Viết đã cứu bài thi của mình. Mình thi tại ĐH Ngoại ngữ đạt điểm Writing 7.5 và tổng điểm 7.0 B2 ngay lần thi đầu tiên!"
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--wp-blue); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700;">TH</div>
+            <div>
+              <div style="font-weight: 700; color: var(--wp-navy);">Trần Hoàng</div>
+              <div style="font-size: 0.8rem; color: var(--wp-text-muted);">VSTEP 7.0 (B2 ĐH Sư Phạm)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wp-card">
+          <div style="color: #F59E0B; margin-bottom: 12px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 0.95rem; font-style: italic; margin-bottom: 20px;">
+            "Hệ thống Flashcards SRS 3D với giọng phát âm bản xứ cực kỳ tiện dụng. Mỗi ngày mình chỉ cần dành 20 phút lật thẻ là nhớ được toàn bộ 35 từ vựng của mỗi chủ đề mà không hề bị quên."
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--wp-navy); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700;">LM</div>
+            <div>
+              <div style="font-weight: 700; color: var(--wp-navy);">Lê Minh</div>
+              <div style="font-size: 0.8rem; color: var(--wp-text-muted);">VSTEP 7.5 (B2 ĐH Ngoại Ngữ)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wp-card">
+          <div style="color: #F59E0B; margin-bottom: 12px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-size: 0.95rem; font-style: italic; margin-bottom: 20px;">
+            "Tài liệu phân tích cực kỳ sâu sắc, đặc biệt là phần 50+ lỗi sai kinh điển L1 giúp mình hiểu ra vì sao trước đây viết câu toàn bị thừa liên từ 'Although... but' hoặc thiếu chủ ngữ giả."
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: #10B981; color: white; display: flex; align-items: center; justify-content: center; font-weight: 700;">NA</div>
+            <div>
+              <div style="font-weight: 700; color: var(--wp-navy);">Nguyễn Anh</div>
+              <div style="font-size: 0.8rem; color: var(--wp-text-muted);">CEFR B2 Đạt Chuẩn Đầu Ra ThS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: CTA BANNER (Navy)
+       ========================================================================== -->
+  <section class="wp-section-navy" style="text-align: center; padding: 100px 0;">
+    <div class="container" style="max-width: 760px;">
+      <h2 style="font-size: 3rem; font-weight: 800; color: white; margin-bottom: 20px;">
+        Sẵn Sàng Đạt Chứng Chỉ B2 Ngay Hôm Nay?
+      </h2>
+      <p style="font-size: 1.15rem; color: var(--wp-text-soft); margin-bottom: 36px;">
+        Toàn bộ cơ sở dữ liệu đã được lưu trữ sẵn sàng trên máy tính của bạn. Bắt đầu phiên học tập đầu tiên ngay bây giờ.
+      </p>
+      <a href="#learning-studio" class="btn btn-yellow" data-target-studio="reader" style="font-size: 1.1rem; padding: 18px 36px;">
+        Bắt Đầu Ôn Luyện Ngay Lập Tức <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHITEPACE FOOTER
+       ========================================================================== -->
+  <footer class="wp-footer">
+    <div class="container">
+      <div class="wp-footer-grid">
+        <!-- Col 1 -->
+        <div class="wp-footer-col">
+          <div class="wp-brand" style="margin-bottom: 16px;">
+            <div class="wp-logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+            <div class="wp-brand-text">whitepace <span>B2</span></div>
+          </div>
+          <p style="color: var(--wp-text-soft); font-size: 0.9rem; line-height: 1.7;">
+            Hệ thống đào tạo và cơ sở tri thức VSTEP Bậc 4 & CEFR B2 độc quyền. Xây dựng theo tiêu chuẩn sư phạm học thuật quốc tế.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="wp-footer-col">
+          <h4>18 Phân Hệ Cốt Lõi</h4>
+          <ul class="wp-footer-links">
+            <li><a href="#learning-studio" data-target-studio="reader">00 - Master Maps</a></li>
+            <li><a href="#learning-studio" data-target-studio="reader">02 - 30 Ngữ Pháp B2</a></li>
+            <li><a href="#learning-studio" data-target-studio="reader">03 - 30 Chủ Đề Từ Vựng</a></li>
+            <li><a href="#learning-studio" data-target-studio="reader">06 - Kỹ Năng Đọc Hiểu</a></li>
+            <li><a href="#learning-studio" data-target-studio="reader">08 - Kỹ Năng Viết Học Thuật</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="wp-footer-col">
+          <h4>Công Cụ Thông Minh</h4>
+          <ul class="wp-footer-links">
+            <li><a href="#learning-studio" data-target-studio="flashcards">Flashcards Spaced Repetition</a></li>
+            <li><a href="#learning-studio" data-target-studio="quiz">Phòng Thi Trắc Nghiệm</a></li>
+            <li><a href="#learning-studio" data-target-studio="checklist">Bảng Kiểm B2 Readiness</a></li>
+            <li><a href="#learning-studio" data-target-studio="vocab">Từ Vựng Text-To-Speech</a></li>
+            <li><a href="#roadmaps">Lộ Trình 16 & 24 Tuần</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="wp-footer-col">
+          <h4>Tài Nguyên & Liên Hệ</h4>
+          <p style="color: var(--wp-text-soft); font-size: 0.88rem; margin-bottom: 16px;">
+            Hệ thống hoạt động ngoại tuyến tại máy tính cá nhân cục bộ.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="#" class="btn btn-outline-white btn-sm" style="width: 38px; height: 38px; padding: 0;"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="btn btn-outline-white btn-sm" style="width: 38px; height: 38px; padding: 0;"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="btn btn-outline-white btn-sm" style="width: 38px; height: 38px; padding: 0;"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="wp-footer-bottom">
+        <div>© 2026 Whitepace B2 Master Portal. Thiết kế chuẩn giao diện Figma Whitepace SaaS.</div>
+        <div>Offline Master Knowledge Base • Khung CEFR B2 & VSTEP Bậc 4</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       GLOBAL SEARCH MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="search-modal">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-right: 16px;">
+        <input type="text" class="modal-search-input" id="modalSearchInput" placeholder="Tìm kiếm nhanh trong 18 phân hệ (VD: đảo ngữ, AI, PEEL, thì hoàn thành...)...">
+        <button class="btn btn-sm" id="modalCloseBtn" style="background:transparent; color: var(--wp-navy);"><i class="fa-solid fa-xmark" style="font-size: 1.2rem;"></i></button>
+      </div>
+      <div class="search-results-list" id="searchResultsList">
+        <!-- Search results rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="libs/marked.min.js"></script>
+  <script src="libs/confetti.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
