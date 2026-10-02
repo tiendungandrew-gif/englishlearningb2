@@ -1,7 +1,7 @@
 @echo off
-title VSTEP B2 Master Portal
+title Learning B2 Portal
 echo ===================================================
-echo     DANG KHOI CHAY VSTEP B2 MASTER LEARNING PORTAL
+echo     DANG KHOI CHAY LEARNING B2 PORTAL
 echo ===================================================
 echo.
 echo Mo trinh duyet tai: http://localhost:8080
