@@ -13,14 +13,12 @@ Vốn từ vựng học thuật B2 được xây dựng theo mô hình kim tự 
     <div class="pyramid-title"><i class="fa-solid fa-gem" style="margin-right:8px;"></i> 30 CHỦ ĐỀ CHUYÊN BIỆT VSTEP (TOPIC-SPECIFIC LEXIS)</div>
     <p class="pyramid-desc">1.050+ Từ vựng chuyên sâu theo 30 chủ đề xã hội & học thuật (Trí tuệ nhân tạo, Biến đổi khí hậu, Y tế, Đô thị hóa, An ninh lương thực...). Chiếm điểm số quyết định trong Reading Passage 3-4 và Writing Task 2.</p>
   </div>
-
   <!-- Pyramid Level 2 -->
   <div class="pyramid-level l2">
     <div class="pyramid-badge">TẦNG 2 (TRUNG TÂM)</div>
     <div class="pyramid-title"><i class="fa-solid fa-graduation-cap" style="margin-right:8px;"></i> ACADEMIC WORD LIST (AWL - 570 HỌ TỪ HỌC THUẬT)</div>
     <p class="pyramid-desc">Nhóm từ vựng học thuật chuyển giao cốt lõi: analyze, establish, precipitate, substantial, exacerbate, implement, mitigate, comprehensive, paradigm shift...</p>
   </div>
-
   <!-- Pyramid Level 1 -->
   <div class="pyramid-level l1">
     <div class="pyramid-badge">TẦNG 1 (NỀN TẢNG)</div>

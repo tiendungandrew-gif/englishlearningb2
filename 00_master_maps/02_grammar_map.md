@@ -29,7 +29,6 @@ Hệ thống ngữ pháp học thuật CEFR B2 & VSTEP Bậc 4 được phân ch
       <span class="tier-pill">24. Cấu trúc sai khiến</span>
     </div>
   </div>
-
   <!-- TIER 2: B2 CORE -->
   <div class="grammar-tier-card b2">
     <div class="tier-header">
@@ -55,7 +54,6 @@ Hệ thống ngữ pháp học thuật CEFR B2 & VSTEP Bậc 4 được phân ch
       <span class="tier-pill">29. Biến đổi câu B1 ➔ B2</span>
     </div>
   </div>
-
   <!-- TIER 3: ADVANCED -->
   <div class="grammar-tier-card adv">
     <div class="tier-header">

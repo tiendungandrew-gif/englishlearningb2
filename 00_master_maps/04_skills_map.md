@@ -38,7 +38,6 @@ Bài thi VSTEP (Vietnamese Standardized Test of English Proficiency) bậc 3–5
       <span>Mục tiêu B2: <strong>20 - 26 / 35 câu đúng</strong> (quy đổi 6.0 - 7.5/10)</span>
     </div>
   </div>
-
   <!-- 2. READING CARD -->
   <div class="skill-visual-card reading">
     <div class="skill-card-top">
@@ -70,7 +69,6 @@ Bài thi VSTEP (Vietnamese Standardized Test of English Proficiency) bậc 3–5
       <span>Mục tiêu B2: <strong>24 - 30 / 40 câu đúng</strong> (quy đổi 6.0 - 7.5/10)</span>
     </div>
   </div>
-
   <!-- 3. WRITING CARD -->
   <div class="skill-visual-card writing">
     <div class="skill-card-top">
@@ -102,7 +100,6 @@ Bài thi VSTEP (Vietnamese Standardized Test of English Proficiency) bậc 3–5
       <span>Mục tiêu B2: <strong>6.0 - 7.5 / 10</strong> (Đủ từ, chia đoạn chuẩn, từ vựng học thuật B2)</span>
     </div>
   </div>
-
   <!-- 4. SPEAKING CARD -->
   <div class="skill-visual-card speaking">
     <div class="skill-card-top">
@@ -141,11 +138,8 @@ Bài thi VSTEP (Vietnamese Standardized Test of English Proficiency) bậc 3–5
 ## ⏱️ 2. SƠ ĐỒ TRỤC THỜI GIAN THI TRÊN MÁY TÍNH (172 PHÚT)
 
 <div class="exam-timeline-box">
-  <div style="font-size: 0.8rem; font-weight: 700; color: var(--wp-yellow); text-transform: uppercase;">
-    QUY TRÌNH THI 172 PHÚT TRÊN MÁY TÍNH
-  </div>
+  <div style="font-size: 0.8rem; font-weight: 700; color: var(--wp-yellow); text-transform: uppercase;">QUY TRÌNH THI 172 PHÚT TRÊN MÁY TÍNH</div>
   <h3 style="color: white; margin-top: 6px;">Thứ Tự 4 Bài Thi VSTEP B2 Chuẩn Bộ GD&ĐT</h3>
-  
   <div class="timeline-flow">
     <div class="timeline-step">
       <div class="timeline-step-num">Chặng 1</div>
@@ -153,21 +147,18 @@ Bài thi VSTEP (Vietnamese Standardized Test of English Proficiency) bậc 3–5
       <div class="timeline-step-time">40 phút • 35 câu trắc nghiệm</div>
     </div>
     <div class="timeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
     <div class="timeline-step">
       <div class="timeline-step-num">Chặng 2</div>
       <div class="timeline-step-name"><i class="fa-solid fa-book-open"></i> READING</div>
       <div class="timeline-step-time">60 phút • 40 câu trắc nghiệm</div>
     </div>
     <div class="timeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
     <div class="timeline-step">
       <div class="timeline-step-num">Chặng 3</div>
       <div class="timeline-step-name"><i class="fa-solid fa-pen-nib"></i> WRITING</div>
       <div class="timeline-step-time">60 phút • 2 bài viết</div>
     </div>
     <div class="timeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
     <div class="timeline-step">
       <div class="timeline-step-num">Chặng 4</div>
       <div class="timeline-step-name"><i class="fa-solid fa-microphone"></i> SPEAKING</div>

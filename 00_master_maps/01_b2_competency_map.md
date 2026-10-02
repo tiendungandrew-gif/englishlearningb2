@@ -17,9 +17,7 @@ Trình độ CEFR B2 (Vantage Level) - Bậc 4 Khung 6 bậc Việt Nam (VSTEP.3
       <span class="pipeline-pill"><i class="fa-solid fa-spell-check" style="color:#0284c7;"></i> Lexis (1.050+ Từ vựng VSTEP, 80 Họ từ, AWL)</span>
     </div>
   </div>
-
   <div class="pipeline-connector"><i class="fa-solid fa-arrow-down"></i></div>
-
   <!-- Stage 2 -->
   <div class="pipeline-stage s2">
     <div>
@@ -32,9 +30,7 @@ Trình độ CEFR B2 (Vantage Level) - Bậc 4 Khung 6 bậc Việt Nam (VSTEP.3
       <span class="pipeline-pill"><i class="fa-solid fa-book-open" style="color:#059669;"></i> Reading: Bóc tách 10 dạng câu hỏi, chiến lược 13-2, loại suy POE</span>
     </div>
   </div>
-
   <div class="pipeline-connector"><i class="fa-solid fa-arrow-down"></i></div>
-
   <!-- Stage 3 -->
   <div class="pipeline-stage s3">
     <div>
@@ -47,9 +43,7 @@ Trình độ CEFR B2 (Vantage Level) - Bậc 4 Khung 6 bậc Việt Nam (VSTEP.3
       <span class="pipeline-pill"><i class="fa-solid fa-lightbulb" style="color:#d97706;"></i> Critical Thinking: Tư duy đa chiều, phản biện phương án, phân tích giải pháp</span>
     </div>
   </div>
-
   <div class="pipeline-connector"><i class="fa-solid fa-arrow-down"></i></div>
-
   <!-- Stage 4 -->
   <div class="pipeline-stage s4">
     <div>
